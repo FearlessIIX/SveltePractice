@@ -1,5 +1,8 @@
-<!--The centered class is used to set default settings for centering-->
-<!--Each div is given a class so they may receive unique borders-->
+<script>
+	let flag = false;
+	
+</script>
+
 <div id="first" class="centered">
 	<div id="seperate" class="centered">
 		<a href="https://css-tricks.com/centering-css-complete-guide/">
@@ -13,6 +16,22 @@
 		</div>
 	</div>
 </div>
+
+<button id="button" on:click={e => flag = !flag}>
+	Info
+</button>
+
+{#if flag}
+	<div id="info">
+		<p>
+			All divs act like boxes, when a div is nested in a div
+			you can think of it as actually being inside the first div on the page.
+		</p>
+		<p>
+			Divs inherit their css styling from the parent div (the div they are inside of)
+		</p>
+</div>
+{/if}
 
 <style>
 	#first {
