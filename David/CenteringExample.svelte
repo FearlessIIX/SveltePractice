@@ -17,23 +17,30 @@
 	</div>
 </div>
 
-<button id="button" on:click={e => flag = !flag}>
-	Info
-</button>
+<div class="centered">
+	<button id="button" on:click={e => flag = !flag}>
+		Info
+	</button>
 
-{#if flag}
-	<div id="info">
-		<p>
-			All divs act like boxes, when a div is nested in a div
-			you can think of it as actually being inside the first div on the page.
-		</p>
-		<p>
-			Divs inherit their css styling from the parent div (the div they are inside of)
-		</p>
+	{#if flag}
+		<div id="info">
+			<p>
+				All divs act like boxes, when a div is nested in a div
+				you can think of it as actually being inside the first div on the page.
+			</p>
+			<p>
+				Divs inherit their css styling from the parent div (the div they are inside of)
+			</p>
+		</div>
+	{/if}
 </div>
-{/if}
 
 <style>
+	
+	:global(html) {
+		height: 120vh;
+	}
+	
 	#first {
 		border: solid;
 		border-color: black;
@@ -65,6 +72,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		flex-direction: column;
+		height: auto;
 	}
 	#seperate {
 		border: solid;
