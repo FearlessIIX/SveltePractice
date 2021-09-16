@@ -83,10 +83,12 @@
 	#buttons {
 		padding-left: 10px;
 	}
+	/* used to resize the element width */
 	#info {
 		display: flex;
-		justify-content: center
+		justify-content: center;
 	}
+	/* Used to place the text in the center of the resized #info */
 	#center {
 		margin: 0, auto;
 		width: 170px;
