@@ -31,7 +31,6 @@
 <div id="page">
     <div id="bar" class="text-center sticky">
         <span>
-            <!--  -->
             <div class="sbutton cbar" on:click="{e => PageId = 0}">
                 <a href="#mainPicture">Red Foxes</a>
             </div>
@@ -256,7 +255,6 @@
         border-top: hidden; 
         border-width: 7px;
         border-bottom-color: rgb(56, 53, 50);
-        /* display: table; */
     }  
     #bar div {
         float: left;
