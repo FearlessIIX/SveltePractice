@@ -259,7 +259,7 @@
     #bar div {
         float: left;
         padding: 0, 0px;
-        width: 25%;
+        max-width: 25%;
     } 
     /* I will admit, i dont know everything this does */
     #bar.sticky { 
@@ -283,12 +283,12 @@
     #mainPicture img {
         display: block;
         margin: auto;
-        height: 60vh;
-        max-width: 55vw;
+        height: 100%;
+        width: auto;
 
     }
     #mainPicture {
-        width: 100%;
+        height: 60vh;
         background-color: #73cbe5;
     }
     
@@ -310,8 +310,8 @@
     #info img {
         display: block;
         margin: auto;
-        width: 65vw;
-        max-width: 75%;
+        width: 100%;
+        height: auto;
     }
     .inner {
         width: 55vw;
