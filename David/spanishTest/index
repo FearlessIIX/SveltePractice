@@ -1,0 +1,65 @@
+<div id="main-page">
+
+</div>
+<style>
+    @import "./main.css";
+</style>
+
+s.svelte
+
+<div id="navbar">
+        <ul id="bruh">
+            <li>
+                <p>Home</p>
+            </li>
+            <li>
+                <p>Events List</p>
+            </li>
+            <li>
+                <p>Contacts</p>
+            </li>
+            <li>
+                <p>Log In</p>
+            </li>
+        </ul>
+</div>
+<style>
+    @import "./y.css";
+</style>
+
+main.css
+
+*{padding: 0px;}
+#main-page{background:#ccd9ff;
+    height:100vh;
+}
+
+y.css
+
+#navbar{
+    text-decoration:underline;
+    height:8vh;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    background-color: white;
+
+}
+#navbar p{
+    font-size:20px;
+}
+#navbar li{
+    float:left;
+    height: 100%;
+    width:25%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bruh{
+    height:inherit;
+    width:33%;
+    left:66%;
+    position:absolute;
+}
