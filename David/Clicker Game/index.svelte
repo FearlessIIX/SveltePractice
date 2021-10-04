@@ -4,8 +4,17 @@
     let gAmt = 1;
     let gAmtC = 25;
     let reb = 0;
-    function handleMainClick() {
-        if (cId == 0) num++;
+    let cheat = false;
+    // function handleMainClick() {
+    //     if (cId == 0) num++;
+    // }
+    const downPressed = event => {
+        if (event.type == "keydown") {
+            if (cheat) {
+                if (event.key === ' ') num++;
+            }
+        }
+        else if (event.key === ' ') num++;
     }
     function btnClick() {
         if (this.id == "upg") {
@@ -45,7 +54,8 @@
         }
     }
 </script>
-<svelte:window on:click={handleMainClick}></svelte:window>
+<svelte:window  on:keyup={downPressed} on:keydown={downPressed}></svelte:window>
+<button id="hidden" class="absolute" on:click="{e => cheat = !cheat}"></button>
 <div id="outer">
     <div id="frame">
         <div id="buttons">
@@ -69,6 +79,6 @@
     </div>
 </div>
 <style>
-    @import "./mainStyle.css";
-    @import "./buttonStyle.css";
+    @import "./Styles/mainStyle.css";
+    @import "./Styles/buttonStyle.css";
 </style>
