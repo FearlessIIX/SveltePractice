@@ -1,6 +1,7 @@
 #buttons button {
     margin: 12.5px 0px;
     border: #323031 solid 3px;
+    border-radius: 12px;
     border-color:#323031;
     background-color: #4A3956;
     color:#e5dde8;
@@ -16,15 +17,13 @@
     border: #323031 solid 3px;
     border-color:#323031;
     background-color: #4A3956;
-    color:#e5dde8;
+    color:#e5dde8;      
     transition: background-color 0.45s, border-color 0.45s;
     padding: 7px;
 }
 #cZero button:hover {
     background-color:#896C9D;
-    border-color: #52485B;
 }
-#cZero button:focus {
-    background-color:#896C9D;
-    border-color: #52485B;
+#buttons button:focus , #cZero button:focus {
+    border-color: #e5dde8;
 }
