@@ -1,0 +1,38 @@
+#outer {
+    width:100vw;
+    height:100vh;
+    background-color:#896C9D;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+#frame {
+    width:75vw;
+    height:80vh;
+    background:#B19DBE;
+}
+#buttons {
+    display:flex;
+    justify-content: space-around;
+    /* E2E8DD */
+}
+#cZero {
+    /* border:solid; */
+    height: inherit;
+    position: relative;
+    color: #4A3956;
+}
+#cZero div {
+    display:flex;
+    justify-content:space-around;
+}
+#cZero div div {
+    text-decoration-color: #4A3956;
+    text-align:center;
+    margin: 10px 0px;
+}
+li {
+    display:flex;
+    justify-content: space-around;
+    padding: 30px;
+}
