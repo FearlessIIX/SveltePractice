@@ -1,0 +1,30 @@
+body {
+    margin:0px;
+}
+.top-bar {
+    width:90vw;
+    height:7vh;
+    margin:auto;
+    display:flex;
+    justify-content:space-around;
+}
+#btn-2 {
+    border: white solid 3px;
+    background-color:rgb(204, 201, 201);
+    transition: background-color 0.5s, border-color 2s, border-radius;
+}
+.right {
+    display:flex;
+    justify-content: right;
+}
+#extra-info {
+    margin-top:20px;
+    justify-content:center;
+    border:solid;
+    text-align:center;
+    width:50vw;
+}
+/* Replaced by Javascript event listeners */
+/* #btn-2:hover { */
+/*   background-color: aquamarine; */
+/* } */
