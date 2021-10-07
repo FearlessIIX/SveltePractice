@@ -1,0 +1,15 @@
+.key-box {
+    width:10vw;
+    height:10vw;
+    border:grey groove 7px;
+    display:inherit;
+    justify-content:inherit;
+    align-items:inherit;
+    font-size:50px;
+}
+#bottom {
+    border-top:black solid 5px;
+}
+#top {
+    border-bottom:black solid 5px;
+}
