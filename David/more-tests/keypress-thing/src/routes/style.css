@@ -5,11 +5,23 @@
     display:inherit;
     justify-content:inherit;
     align-items:inherit;
-    font-size:50px;
+    font-size:30px;
+    color:rgb(70, 69, 69);
+}
+#top span {
+    top: 5%;
 }
 #bottom {
     border-top:black solid 5px;
+    border-bottom:black solid 5px;
 }
 #top {
     border-bottom:black solid 5px;
+    border-right:black solid 10px;
+}
+.text-box span {
+    border:black solid 2px;
+}
+.text-box {
+    width:90vw;
 }
