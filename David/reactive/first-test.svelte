@@ -20,17 +20,17 @@
 <div id="page">
 	<div class="sticky">
 <!-- 	Navigation Bar	 -->
-		<div class="navbar">
-			<div class="button">
+		<div class="navbar {theme}">
+			<div class="button {theme}">
 				item
 			</div>
-			<div class="button">
+			<div class="button {theme}">
 				item
 			</div>
-			<div class="button">
+			<div class="button {theme}">
 				item
 			</div>
-			<div class="button" on:click={toggleDropdown}>
+			<div class="button {theme}" on:click={toggleDropdown}>
 				Theme
 			</div>
 		</div>
@@ -59,8 +59,6 @@
 	.navbar {
 		height:10vh;
 		max-width:100vw;
-		background-color:lightgrey;
-		border-bottom:rgb(50, 50, 50) solid 5px;
 		padding:5px;
 		display:flex;
 		justify-content: space-around;
@@ -73,9 +71,6 @@
 		align-items:center;
 		border:black solid 1px;
 		transition: background-color 0.7s;
-	}
-	.button:hover {
-		background-color:rgb(235, 235, 235);
 	}
 	.sticky {
 		  position: -webkit-sticky; /* Safari */
@@ -116,5 +111,20 @@
 		display:flex;
 		justify-content:center;
 		align-items:center;
+		transition: all 0.5s;
+	}
+	.Light.navbar {
+			border-bottom:rgb(50, 50, 50) solid 5px;
+			background-color:lightgrey;
+	}
+	.Dark.navbar {
+			border-bottom:rgb(50, 50, 50) solid 5px;
+			background-color:rgb(100, 100, 100)
+	}
+	.Light.button:hover {
+		background-color:rgb(235, 235, 235);
+	}
+	.Dark.button:hover {
+		background-color:rgb(125, 125, 125);
 	}
 </style>
