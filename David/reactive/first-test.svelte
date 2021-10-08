@@ -39,7 +39,7 @@
 			<div class="theme-selector {theme}">
 				<h4>Theme</h4>
 				<div id="t-buttons">
-					<div class="t-button" on:click={toggleTheme}>
+					<div class="t-button {theme}" on:click={toggleTheme}>
 						{theme}
 					</div>
 				</div>
@@ -108,6 +108,7 @@
 		border:solid;
 		display:flex;
 		justify-content:center;
+		margin-bottom:5px;
 		align-items:center;
 		transition: all 0.5s;
 	}
@@ -129,5 +130,16 @@
 		background-color:rgb(235, 235, 235);
 		border:rgb(150, 150, 150) solid 2px;
 		border-top:hidden;
+	}
+	.Dark.theme-selector {
+		background-color:rgb(100, 100, 100);
+		border:rgb(50, 50, 50) solid 2px;
+		border-top:hidden;
+	}
+	.Light.t-button {
+		border:rgb(150, 150, 150) solid 2px;
+	}
+	.Dark.t-button {
+		border:rgb(50, 50, 50) solid 2px;
 	}
 </style>
