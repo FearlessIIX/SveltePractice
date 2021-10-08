@@ -36,7 +36,7 @@
 		</div>
 <!-- 	Theme Selection box	 -->
 		<div class="j-right {themeDropdown.visibility}">
-			<div class="theme-selector">
+			<div class="theme-selector {theme}">
 				<h4>Theme</h4>
 				<div id="t-buttons">
 					<div class="t-button" on:click={toggleTheme}>
@@ -81,8 +81,6 @@
 		position:absolute;
 		width:25vw;
 		right:0px;
-		background-color:rgb(235, 235, 235);
-		border:black solid 2px;
 		border-top:hidden;
 	}
 	.j-right {
@@ -114,11 +112,11 @@
 		transition: all 0.5s;
 	}
 	.Light.navbar {
-			border-bottom:rgb(50, 50, 50) solid 5px;
+			border-bottom:rgb(150, 150, 150) solid 4px;
 			background-color:lightgrey;
 	}
 	.Dark.navbar {
-			border-bottom:rgb(50, 50, 50) solid 5px;
+			border-bottom:rgb(50, 50, 50) solid 4px;
 			background-color:rgb(100, 100, 100)
 	}
 	.Light.button:hover {
@@ -126,5 +124,10 @@
 	}
 	.Dark.button:hover {
 		background-color:rgb(125, 125, 125);
+	}
+	.Light.theme-selector {
+		background-color:rgb(235, 235, 235);
+		border:rgb(150, 150, 150) solid 2px;
+		border-top:hidden;
 	}
 </style>
