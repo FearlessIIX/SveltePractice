@@ -1,9 +1,9 @@
-
 <script>
 	let themeDropdown = {
 		status: false,
 		visibility: "hidden"
 	}
+	let theme = "Light";
 	
 	function toggleDropdown() {
 		themeDropdown.status = !themeDropdown.status;
@@ -11,7 +11,10 @@
 			themeDropdown.visibility = "visible"
 		}
 		else themeDropdown.visibility = "hidden"
-		
+	}
+	function toggleTheme() {
+		if (theme == "Light") theme = "Dark"
+		else theme = "Light";
 	}
 </script>
 <div id="page">
@@ -34,13 +37,10 @@
 <!-- 	Theme Selection box	 -->
 		<div class="j-right {themeDropdown.visibility}">
 			<div class="theme-selector">
-				<h4>Themes</h4>
+				<h4>Theme</h4>
 				<div id="t-buttons">
-					<div class="t-button">
-						Dark
-					</div>
-					<div class="t-button">
-						Light
+					<div class="t-button" on:click={toggleTheme}>
+						{theme}
 					</div>
 				</div>
 			</div>
@@ -105,6 +105,16 @@
 		text-decoration:underline;
 	}
 	#t-buttons {
-		border:green solid;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+	}
+	.t-button {
+		width:80%;
+		height:7vh;
+		border:solid;
+		display:flex;
+		justify-content:center;
+		align-items:center;
 	}
 </style>
