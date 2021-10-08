@@ -1,8 +1,22 @@
+
 <script>
-	let themeDropdown = false;
+	let themeDropdown = {
+		status: false,
+		visibility: "hidden"
+	}
+	
+	function toggleDropdown() {
+		themeDropdown.status = !themeDropdown.status;
+		if (themeDropdown.visibility == "hidden") {
+			themeDropdown.visibility = "visible"
+		}
+		else themeDropdown.visibility = "hidden"
+		
+	}
 </script>
 <div id="page">
 	<div class="sticky">
+<!-- 	Navigation Bar	 -->
 		<div class="navbar">
 			<div class="button">
 				item
@@ -13,20 +27,38 @@
 			<div class="button">
 				item
 			</div>
-			<div class="button">
+			<div class="button" on:click={toggleDropdown}>
 				Theme
+			</div>
+		</div>
+<!-- 	Theme Selection box	 -->
+		<div class="j-right {themeDropdown.visibility}">
+			<div class="theme-selector">
+				<h4>Themes</h4>
+				<div id="t-buttons">
+					<div class="t-button">
+						Dark
+					</div>
+					<div class="t-button">
+						Light
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 <style>
+	:global(body) {
+		margin:0px;
+		padding:0px;
+	}
 	#page {
-		width:100vw;
-		height:500vh;
+		height:5000px;
+		max-width:100vw;
 	}
 	.navbar {
 		height:10vh;
-		width:100%;
+		max-width:100vw;
 		background-color:lightgrey;
 		border-bottom:rgb(50, 50, 50) solid 5px;
 		padding:5px;
@@ -49,5 +81,30 @@
 		  position: -webkit-sticky; /* Safari */
  			position: sticky;
   		top: 0;
+	}
+	.theme-selector {
+		position:absolute;
+		width:25vw;
+		right:0px;
+		background-color:rgb(235, 235, 235);
+		border:black solid 2px;
+		border-top:hidden;
+	}
+	.j-right {
+		transition: opacity 0.75s;
+	}
+	.hidden {
+		opacity:0
+	}
+	.visible {
+		opacity:100
+	}
+	.theme-selector h4 {
+		margin-top:5px;
+		text-align:center;
+		text-decoration:underline;
+	}
+	#t-buttons {
+		border:green solid;
 	}
 </style>
