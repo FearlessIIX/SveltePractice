@@ -66,6 +66,7 @@
 			{/if}
 		</div>
 	</div>
+<!--	Page Content	-->
 	<div class="page-content {theme}">
 		<div>
 			<button class="btn-test {theme}" on:click={alertTest}>A clickable button</button>
