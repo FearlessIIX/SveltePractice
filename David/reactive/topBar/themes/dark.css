@@ -1,0 +1,18 @@
+.Dark.navbar {
+    border-bottom:rgb(50, 50, 50) solid 4px;
+    background-color:rgb(100, 100, 100)
+}
+.Dark.button:hover {
+    background-color:rgb(125, 125, 125);
+}
+.Dark.theme-selector {
+    background-color:rgb(100, 100, 100);
+    border:rgb(50, 50, 50) solid 2px;
+    border-top:hidden;
+}
+.Dark.t-button {
+    border:rgb(50, 50, 50) solid 2px;
+}
+.Dark.t-button:hover {
+    background-color:rgb(125, 125, 125);
+}

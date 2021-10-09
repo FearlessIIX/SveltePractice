@@ -1,0 +1,18 @@
+.Light.navbar {
+    border-bottom:rgb(150, 150, 150) solid 4px;
+    background-color:lightgrey;
+}
+.Light.button:hover {
+    background-color:rgb(235, 235, 235);
+}
+.Light.theme-selector {
+    background-color:lightgrey;
+    border:rgb(150, 150, 150) solid 2px;
+    border-top:hidden;
+}
+.Light.t-button {
+    border:rgb(150, 150, 150) solid 2px;
+}
+.Light.t-button:hover {
+    background-color:rgb(235, 235, 235);
+}
