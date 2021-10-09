@@ -1,18 +1,43 @@
+/** Global styles */
+.Dark * {
+    color:lightgray;
+}
+/** Navbar styles */
+.Dark.sticky {
+    background-color:rgb(120, 120, 120);
+}
 .Dark.navbar {
-    border-bottom:rgb(50, 50, 50) solid 4px;
-    background-color:rgb(100, 100, 100)
+    border-bottom:rgb(155, 155, 155) solid 4px;
+    background-color:rgb(100, 100, 100);
+}
+.Dark.button {
+    border: rgb(155, 155, 155) solid 2px;
 }
 .Dark.button:hover {
     background-color:rgb(125, 125, 125);
 }
+/** Theme Selector styles */
 .Dark.theme-selector {
     background-color:rgb(100, 100, 100);
-    border:rgb(50, 50, 50) solid 2px;
-    border-top:hidden;
+    border:rgb(155, 155, 155) solid 2px;
 }
 .Dark.t-button {
-    border:rgb(50, 50, 50) solid 2px;
+    border:rgb(155, 155, 155) solid 2px;
 }
 .Dark.t-button:hover {
+    background-color:rgb(125, 125, 125);
+}
+/** Page Content styles  */
+.Dark.page-content {
+    background-color: rgb(120, 120, 120)
+}
+.Dark.btn-test {
+    border:rgb(155, 155, 155) solid 2px;
+}
+.Dark.btn-test {
+    border: rgb(155, 155, 155) solid 2px;
+    background-color:rgb(100, 100, 100);
+}
+.Dark.btn-test:hover {
     background-color:rgb(125, 125, 125);
 }
