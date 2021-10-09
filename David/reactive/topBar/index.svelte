@@ -1,7 +1,7 @@
 <script>
 	let themeDropdown = {
 		status: false,
-		visibility: "hidden"
+		visibility: "hide"
 	}
 	let theme = "Light";
 	
