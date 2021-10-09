@@ -1,13 +1,25 @@
+/** Global styles */
+.Light * {
+    color:black;
+}
+/** Navbar styles */
 .Light.navbar {
-    border-bottom:rgb(150, 150, 150) solid 4px;
-    background-color:lightgrey;
+    border-bottom:rgb(190, 190, 190) solid 4px;
+    background-color:rgb(210, 210, 210);
+}
+.Light.button {
+    border:rgb(150, 150, 150) solid 2px;
 }
 .Light.button:hover {
     background-color:rgb(235, 235, 235);
 }
+.Light.button:focus {
+    border-width: 4px;
+}
+/** Theme Selector styles*/
 .Light.theme-selector {
-    background-color:lightgrey;
-    border:rgb(150, 150, 150) solid 2px;
+    background-color:rgb(210, 210, 210);
+    border:rgb(190, 190, 190) solid 2px;
     border-top:hidden;
 }
 .Light.t-button {
@@ -15,4 +27,21 @@
 }
 .Light.t-button:hover {
     background-color:rgb(235, 235, 235);
+}
+.Light.t-button:focus {
+    border-width:4px;
+}
+/** Page Content styles  */
+.Light.page-content {
+    background-color: white;
+}
+.Light.btn-test {
+    border:rgb(150, 150, 150) solid 2px;
+    background-color:rgb(210, 210, 210);
+}
+.Light.btn-test:hover {
+    background-color:rgb(235, 235, 235);
+}
+.Light.btn-test:focus {
+    border-width:4px;
 }
