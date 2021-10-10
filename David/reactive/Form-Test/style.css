@@ -19,7 +19,7 @@
     transition: border-color 0.5s;
 }
 .input label::after {
-    content:" :"
+    content:" : "
 }
 .input input {
     border: black solid 2px;
