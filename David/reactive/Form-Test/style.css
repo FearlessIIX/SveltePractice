@@ -1,0 +1,40 @@
+.form-box {
+    border:black solid 3px;
+    border-radius:10px;
+    height:75%;
+    width:500px;
+}
+.input-box {
+    margin:20px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+.input {
+    display: flex;
+    justify-content: right;
+    float:right;
+    align-items:center;
+    width:100%;
+    transition: border-color 0.5s;
+}
+.input label::after {
+    content:" :"
+}
+.input input {
+    border: black solid 2px;
+    transition: border-color 0.5s;
+    margin:15px;
+}
+.input input:focus {
+    border-color:aquamarine;
+}
+.btn-submit button {
+    border:black solid 2px;
+    padding: 7px 20px 7px 20px;
+    transition: background-color 0.5s;
+    background-color:rgb(194, 194, 197);
+}
+.btn-submit button:hover {
+    background-color: rgb(223, 219, 219);
+}
